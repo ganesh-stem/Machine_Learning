@@ -242,10 +242,6 @@ The sentence:
 
 > **"Ordinary Least Squares Linear Regression model assumes, in one of its 7 premises"**
 
-means that **Ordinary Least Squares (OLS)** regression relies on a set of **seven key assumptions (premises)** in order to produce valid, unbiased, and efficient estimates.
-
-The sentence is introducing the idea that **OLS regression makes multiple assumptions** — and whatever is being discussed (such as "residuals are normally distributed" or "homoscedasticity") is **one** of those seven.
-
 ---
 
 ## ✅ The 7 Classical Assumptions of OLS (Gauss-Markov Theorem)
@@ -273,10 +269,4 @@ Here they are, typically phrased for multiple linear regression:
 7. **Normality of Errors** *(only needed for inference, not for unbiasedness)*
    The residuals are normally distributed — needed for valid p-values, t-tests, and confidence intervals.
 
----
 
-### ✍️ So your sentence means:
-
-OLS assumes a total of 7 premises. The statement is referring to one of them — likely about residuals — as being part of these required assumptions for the model to function correctly (especially for inference).
-
-Would you like me to help rephrase your sentence to make it clearer?
