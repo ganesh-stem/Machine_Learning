@@ -237,3 +237,46 @@ Linear regression endures as a cornerstone of statistical analysis because it pe
 **Success with linear regression requires understanding both capabilities and limitations**. Master the assumptions, embrace diagnostic procedures, and recognize when alternative methods better serve your needs. When properly applied to appropriate problems, linear regression provides profound insights into variable relationships and reliable predictions for informed decision-making.
 
 The journey from simple correlation to sophisticated modeling reveals linear regression's elegant simplicity masking substantial depth. **Whether predicting house prices, optimizing treatments, or understanding complex systems, linear regression provides the foundation for quantitative reasoning** in our data-driven world. Its educational value extends beyond statistics - it teaches the essential skill of extracting meaningful insights from numerical relationships, a capability that becomes increasingly valuable as data continues to proliferate across all fields of human endeavor.
+
+The sentence:
+
+> **"Ordinary Least Squares Linear Regression model assumes, in one of its 7 premises"**
+
+means that **Ordinary Least Squares (OLS)** regression relies on a set of **seven key assumptions (premises)** in order to produce valid, unbiased, and efficient estimates.
+
+The sentence is introducing the idea that **OLS regression makes multiple assumptions** — and whatever is being discussed (such as "residuals are normally distributed" or "homoscedasticity") is **one** of those seven.
+
+---
+
+## ✅ The 7 Classical Assumptions of OLS (Gauss-Markov Theorem)
+
+Here they are, typically phrased for multiple linear regression:
+
+1. **Linearity**
+   The relationship between the independent variables and the dependent variable is linear.
+
+2. **Independence of Errors**
+   Residuals (errors) are independent of each other — no autocorrelation.
+
+3. **Homoscedasticity**
+   The variance of residuals is constant across all levels of the independent variables.
+
+4. **No Perfect Multicollinearity**
+   Independent variables are not perfect linear combinations of each other.
+
+5. **Zero Mean of Errors**
+   The expected value of residuals is zero: $E(\varepsilon) = 0$
+
+6. **Exogeneity**
+   The independent variables are not correlated with the residuals.
+
+7. **Normality of Errors** *(only needed for inference, not for unbiasedness)*
+   The residuals are normally distributed — needed for valid p-values, t-tests, and confidence intervals.
+
+---
+
+### ✍️ So your sentence means:
+
+OLS assumes a total of 7 premises. The statement is referring to one of them — likely about residuals — as being part of these required assumptions for the model to function correctly (especially for inference).
+
+Would you like me to help rephrase your sentence to make it clearer?
