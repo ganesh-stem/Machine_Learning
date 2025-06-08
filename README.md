@@ -326,3 +326,90 @@ Study hours (X) → Test scores (Y)
 - NOT Exogenous: BUT if you get bad scores, you might study more next time! So Y is affecting X back.
 
 So linearity is about the pattern/shape, and exogeneity is about the direction of cause-and-effect!
+
+Let me explain Ordinary Least Squares (OLS) like we're solving a fun puzzle together!
+
+# Ordinary Least Squares (OLS)
+
+## What is OLS?
+
+Imagine you have a bunch of dots scattered on a piece of paper, and you want to draw the **best possible straight line** through them. OLS is like having a super smart ruler that finds the perfect line!
+
+## The Big Idea - Minimizing Mistakes
+
+**The Goal:** Draw a line that gets as close as possible to ALL the dots.
+
+Think of it like this: You're a basketball coach trying to draw a line showing how practice hours relate to points scored. You have dots for each player, and you want the line that makes the smallest total mistakes.
+
+## How We Measure "Mistakes" (Residuals)
+
+For each dot, we measure how far it is from our line - that's called a **residual** or **error**.
+
+But here's the clever part: Instead of just adding up all the mistakes (because some are above the line +, some below -, and they'd cancel out), we **square each mistake** first, then add them up.
+
+**Why square them?**
+- Big mistakes get punished more than small ones (a mistake of 4 becomes 16, but a mistake of 1 stays 1)
+- All mistakes become positive numbers
+- It's like saying "I really, really don't want big mistakes!"
+
+## The Magic Formula
+
+For a simple line: **Y = a + bX**
+
+Where:
+- **Y** = what we're predicting (like test scores)
+- **X** = what we're using to predict (like study hours)  
+- **a** = where the line crosses the Y-axis (the starting point)
+- **b** = the slope (how steep the line is)
+
+## How OLS Finds the Best Line
+
+**Step 1:** Try different values for 'a' and 'b'
+
+**Step 2:** For each combination, calculate:
+- How far each dot is from the line
+- Square each distance
+- Add up all the squared distances
+
+**Step 3:** Pick the 'a' and 'b' that give the **smallest total** of squared distances
+
+It's like trying on different shoes until you find the pair that fits best!
+
+## A Simple Example
+
+Let's say we have 3 kids:
+- Kid 1: Studies 2 hours, scores 70
+- Kid 2: Studies 4 hours, scores 80  
+- Kid 3: Studies 6 hours, scores 90
+
+OLS finds the line: **Score = 60 + 5×(Study Hours)**
+
+This means:
+- Starting point (a) = 60 (if you study 0 hours, you'd get 60)
+- Slope (b) = 5 (each extra hour of study adds 5 points)
+
+## Why It's Called "Least Squares"
+
+- **Least:** We want the smallest total
+- **Squares:** We square all the mistakes before adding them
+- **Ordinary:** It's the most basic/standard way to do this
+
+## What Makes OLS Special?
+
+**1. Unbiased:** On average, it gives the right answer
+
+**2. Efficient:** Among all unbiased methods, it has the smallest variability
+
+**3. Best Linear Unbiased Estimator (BLUE):** It's the champion of linear methods!
+
+## Real-World Example
+
+Imagine you're a real estate agent trying to predict house prices:
+- **X** = Size of house (square feet)
+- **Y** = Price of house
+
+OLS helps you find the perfect line that says: "For every extra square foot, the price goes up by $X"
+
+The line minimizes how wrong you are across ALL houses in your data, giving you the most reliable way to predict new house prices!
+
+Think of OLS as your mathematical best friend that always finds the fairest, most balanced answer when you're trying to understand how two things are related!
