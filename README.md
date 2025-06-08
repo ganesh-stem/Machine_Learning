@@ -269,4 +269,23 @@ Here they are, typically phrased for multiple linear regression:
 7. **Normality of Errors** *(only needed for inference, not for unbiasedness)*
    The residuals are normally distributed — needed for valid p-values, t-tests, and confidence intervals.
 
+**1. Linearity (Things grow in straight lines)**
+This means if you draw dots on a chart showing kids' ages and heights, they should make a pretty straight line - not a zigzag or curvy line. Like how you get taller each year in a steady way, not jumping around randomly.
 
+**2. Independence of Errors (Mistakes don't copy each other)**
+If you guess one kid's height wrong, it shouldn't make you guess the next kid's height wrong too. It's like if you get one math problem wrong, it doesn't mean you'll get the next one wrong - each guess is separate.
+
+**3. Homoscedasticity (Mistakes are the same size everywhere)**
+Your guesses should be equally good for short kids and tall kids. You shouldn't be really good at guessing heights of 6-year-olds but terrible at guessing heights of 10-year-olds.
+
+**4. No Perfect Multicollinearity (Don't use the same clue twice)**
+Don't use two things that are basically the same to make your guess. Like don't use both "how many months old" AND "how many years old" - they're telling you the same thing!
+
+**5. Zero Mean of Errors (Your mistakes balance out)**
+Sometimes you guess too high, sometimes too low, but on average your mistakes should cancel out to zero - like a balanced see-saw.
+
+**6. Exogeneity (Your clues aren't affected by your mistakes)**
+The things you use to guess (like age) shouldn't be connected to how wrong you are. Age doesn't change just because you made a bad guess!
+
+**7. Normality of Errors (Mistakes follow a pattern)**
+When you make mistakes, most should be small, and big mistakes should be rare - like a hill shape if you count them up.
